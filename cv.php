@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -41,7 +42,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- PARTIE GAUCHE : FORMULAIRE -->
+            <!-- PARTIE GAUCHE : FORMULAIRE +required + taille maxi  -->
             <div class="col-md-6 formulaire-section text-white">
                 <h1 class="text-center mb-4">Formulaire</h1>
 
@@ -83,7 +84,7 @@
                 </div>
 
                 <!-- Formations -->
-                <div class="formations mb-4">
+                 <div class="formations mb-4">
                     <h2 class="text-center text-decoration-underline">Formations</h2>
                     <div class="formation1 mb-3">
                         <h3 class="text-center">Formation n°1:</h3>
@@ -121,6 +122,16 @@
                         <button type="button" id="addButtonxp1" class="btn btn-light mb-3">Ajouter une
                             expérience</button>
                     </form>
+                    <form id="fieldContainerXp2" action="" method="get">
+                        <h3 class="text-center">Expérience professionnelles n°2 :</h3>
+                        <button type="button" id="addButtonxp2" class="btn btn-light mb-3">Ajouter une
+                            expérience</button>
+                    </form>
+                    <form id="fieldContainerXp3" action="" method="get">
+                        <h3 class="text-center">Expérience professionnelles n°3:</h3>
+                        <button type="button" id="addButtonxp3" class="btn btn-light mb-3">Ajouter une
+                            expérience</button>
+                    </form>
 
                 </div>
 
@@ -130,38 +141,59 @@
 
                     <div class="mb-3">
                         <h3 class="text-center">Compétence n°1</h3>
-                        <form action="" method="get">
-                            <div class="mb-2">
-                                <label for="nomcompet1" class="form-label">Nom de la compétence</label>
-                                <input type="text" name="N.comp" id="nomcompet1" class="form-control">
-                            </div>
-                            <div class="mb-2">
-                                <label for="lvlcomp1" class="form-label">Niveau de la compétence:</label>
-                                <select class="form-select" id="lvlcomp1">
-                                    <option value="débutant">Débutant</option>
-                                    <option value="inter.">Intermédiaire</option>
-                                    <option value="Avancé">Avancé</option>
-                                    <option value="Expert">Expert</option>
-                                </select>
-                            </div>
-                        </form>
+                        <div id="fieldContainerComp">
+                            <button type="button" id="addButtoncomp" class="btn btn-light mb-3">Ajouter une compétence
+                            </button>
+                        </div>
+
                     </div>
 
                     <div class="mb-3">
                         <h3 class="text-center">Compétence n°2</h3>
-                        <!--  <form id="fieldContainer" action="" method="get">
-                          <button type="button" id="addButton" class="btn btn-light mb-3">Ajouter une
-                                expérience</button>
-                        </form> -->
+                        <div id="fieldContainerComp2">
+                            <button type="button" id="addButtoncomp2" class="btn btn-light mb-3">Ajouter une compétence
+                            </button>
+                        </div>
 
                     </div>
 
                     <div class="mb-3">
                         <h3 class="text-center">Compétence n°3</h3>
-                        <form id="fieldContainer" action="" method="get">
-                            <button type="button" id="addButton" class="btn btn-light mb-3">Ajouter une
+                        <form id="fieldContainerComp3" action="" method="get">
+                            <button type="button" id="addButtoncomp3" class="btn btn-light mb-3">Ajouter une
                                 expérience</button>
                         </form>
+
+                    </div>
+                    <div class="mb-4">
+                        <h2 class="text-center text-decoration-underline">Langues</h2>
+                        <div class="mb-3">
+                            <h3 class="text-center">Langue n°1</h3>
+                            <div id="fieldContainerlang1">
+                                <button type="button" id="addButtonlang1" class="btn btn-light mb-3">Ajouter une
+                                    Langue
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <h3 class="text-center">Langue n°2</h3>
+                            <div id="fieldContainerlang2">
+                                <button type="button" id="addButtonlang2" class="btn btn-light mb-3">Ajouter une
+                                    Langue
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <h3 class="text-center">Langue n°3</h3>
+                            <div id="fieldContainerlang3">
+                                <button type="button" id="addButtonlang3" class="btn btn-light mb-3">Ajouter une
+                                    Langue
+                                </button>
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -196,7 +228,7 @@
                         <h2 class="text-center fs-2 text-uppercase text-decoration-underline">Diplômes/Formations</h2>
                         <div class="row mb-2">
                             <div class="col">
-                                <p><strong>Formation 1</strong></p>
+                                <p id="N_F1"><strong>Formation 1</strong></p>
                                 <p>Établissement - Période</p>
                             </div>
                         </div>
