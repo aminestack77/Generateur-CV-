@@ -41,615 +41,194 @@ des.addEventListener("input", (event) => {
     aboutcv.innerText = descr
 })
 
-// partie formation
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerformation1");
-    const addButton = document.getElementById("addButton1");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const formationinput = document.createElement('input');
-        formationinput.type = "text";
-        formationinput.id = "Formation1"
-        formationinput.name = "experience[]";
-        formationinput.placeholder = 'Entrer le nom de votre formation';
-     
-
-
-        const ecoleinput = document.createElement('input');
-        ecoleinput.type = "text";
-        ecoleinput.name = "experience[]";
-        ecoleinput.placeholder = 'Lieu de formation ? ';
-
-        const anneeinput = document.createElement('input');
-        anneeinput.type = "text";
-        anneeinput.name = "experience[]";
-        anneeinput.placeholder = 'Entrer la periode de la formation';
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(formationinput);
-        div.appendChild(anneeinput);
-        div.appendChild(ecoleinput)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//appelle la const pour ecrire
-const nomformation = Element.getElementById("Formation1");
-nomformation.addEventListener("input", (event) => {
-    const nf = event.target.value;
-    N_F1.innerText = nf;
-});
-//formation 2 
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerformation2");
-    const addButton = document.getElementById("addButton2");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const formationinput = document.createElement('input');
-        formationinput.type = "text";
-        formationinput.name = "experience[]";
-        formationinput.placeholder = 'Entrer le nom de votre formation';
-
-
-        const ecoleinput = document.createElement('input');
-        ecoleinput.type = "text";
-        ecoleinput.name = "experience[]";
-        ecoleinput.placeholder = 'Entrer le nom de votre établissement ';
-
-        const anneeinput = document.createElement('input');
-        anneeinput.type = "text";
-        anneeinput.name = "experience[]";
-        anneeinput.placeholder = 'Entrer la periode de la formation';
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(formationinput);
-        div.appendChild(anneeinput);
-        div.appendChild(ecoleinput)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//formation 3 
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerformation3");
-    const addButton = document.getElementById("addButton3");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const formationinput = document.createElement('input');
-        formationinput.type = "text";
-        formationinput.name = "experience[]";
-        formationinput.placeholder = 'Entrer le nom de votre formation';
-
-
-        const ecoleinput = document.createElement('input');
-        ecoleinput.type = "text";
-        ecoleinput.name = "experience[]";
-        ecoleinput.placeholder = 'Entrer le nom de votre établissement ';
-
-        const anneeinput = document.createElement('input');
-        anneeinput.type = "text";
-        anneeinput.name = "experience[]";
-        anneeinput.placeholder = 'Entrer la periode de la formation';
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(formationinput);
-        div.appendChild(anneeinput);
-        div.appendChild(ecoleinput)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-
-//partie experience professionelle
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerXp1");
-    const addButton = document.getElementById("addButtonxp1");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const XPinput = document.createElement('input');
-        XPinput.type = "text";
-        XPinput.name = "experience[]";
-        XPinput.placeholder = 'Entrez le nom de votre exp.';
-
-
-        const xpentreinput = document.createElement('input');
-        xpentreinput.type = "text";
-        xpentreinput.name = "experience[]";
-        xpentreinput.placeholder = 'Entrer le nom de votre entreprise ';
-
-        const XPanneeinput = document.createElement('input');
-        XPanneeinput.type = "text";
-        XPanneeinput.name = "experience[]";
-        XPanneeinput.placeholder = 'Entrer la periode de votre expérience';
-
-        const XPmissions = document.createElement('input');
-        XPmissions.type = 'text';
-        XPmissions.name = 'experience[]'
-        XPmissions.placeholder = 'Décrivez vos missions'
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(XPinput);
-        div.appendChild(xpentreinput);
-        div.appendChild(XPanneeinput)
-        div.appendChild(XPmissions)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-
-
-//XP-2
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerXp2");
-    const addButton = document.getElementById("addButtonxp2");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const XPinput = document.createElement('input');
-        XPinput.type = "text";
-        XPinput.name = "experience[]";
-        XPinput.placeholder = 'Entrez le nom de votre exp.';
-
-
-        const xpentreinput = document.createElement('input');
-        xpentreinput.type = "text";
-        xpentreinput.name = "experience[]";
-        xpentreinput.placeholder = 'Entrer le nom de votre entreprise ';
-
-        const XPanneeinput = document.createElement('input');
-        XPanneeinput.type = "text";
-        XPanneeinput.name = "experience[]";
-        XPanneeinput.placeholder = 'Entrer la periode de votre expérience';
-
-        const XPmissions = document.createElement('input');
-        XPmissions.type = 'text';
-        XPmissions.name = 'experience[]'
-        XPmissions.placeholder = 'Décrivez vos missions'
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(XPinput);
-        div.appendChild(xpentreinput);
-        div.appendChild(XPanneeinput)
-        div.appendChild(XPmissions)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-
-//XP-3
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerXp3");
-    const addButton = document.getElementById("addButtonxp3");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const XPinput = document.createElement('input');
-        XPinput.type = "text";
-        XPinput.name = "experience[]";
-        XPinput.placeholder = 'Entrez le nom de votre exp.';
-
-
-        const xpentreinput = document.createElement('input');
-        xpentreinput.type = "text";
-        xpentreinput.name = "experience[]";
-        xpentreinput.placeholder = 'Entrer le nom de votre entreprise ';
-
-        const XPanneeinput = document.createElement('input');
-        XPanneeinput.type = "text";
-        XPanneeinput.name = "experience[]";
-        XPanneeinput.placeholder = 'Entrer la periode de votre expérience';
-
-        const XPmissions = document.createElement('input');
-        XPmissions.type = 'text';
-        XPmissions.name = 'experience[]'
-        XPmissions.placeholder = 'Décrivez vos missions'
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(XPinput);
-        div.appendChild(xpentreinput);
-        div.appendChild(XPanneeinput)
-        div.appendChild(XPmissions)
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//Compétence 1 
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerComp");
-    const addButton = document.getElementById("addButtoncomp");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const Compname = document.createElement('input');
-        Compname.type = "text";
-        Compname.name = "experience[]";
-        Compname.placeholder = 'Entrez le nom de votre compétence';
-
-
-        const comptlvl = document.createElement('input');
-        comptlvl.type = "text";
-        comptlvl.name = "experience[]";
-        comptlvl.placeholder = 'Niveau de votre compétence:(débutant-intermédiare-avancé-expert) ';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(Compname);
-        div.appendChild(comptlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-// Competence 2
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerComp2");
-    const addButton = document.getElementById("addButtoncomp2");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const Compname = document.createElement('input');
-        Compname.type = "text";
-        Compname.name = "experience[]";
-        Compname.placeholder = 'Entrez le nom de votre compétence';
-
-
-        const comptlvl = document.createElement('input');
-        comptlvl.type = "text";
-        comptlvl.name = "experience[]";
-        comptlvl.placeholder = 'Niveau de votre compétence:(débutant-intermédiare-avancé-expert) ';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(Compname);
-        div.appendChild(comptlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-
-//Compétence 3
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerComp3");
-    const addButton = document.getElementById("addButtoncomp3");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const Compname = document.createElement('input');
-        Compname.type = "text";
-        Compname.name = "experience[]";
-        Compname.placeholder = 'Entrez le nom de votre compétence';
-
-
-        const comptlvl = document.createElement('input');
-        comptlvl.type = "text";
-        comptlvl.name = "experience[]";
-        comptlvl.placeholder = 'Niveau de votre compétence:(débutant-intermédiare-avancé-expert) ';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(Compname);
-        div.appendChild(comptlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//Langues 1
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerlang1");
-    const addButton = document.getElementById("addButtonlang1");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const langname = document.createElement('input');
-        langname.type = "text";
-        langname.name = "experience[]";
-        langname.placeholder = 'Entrez la langue vous maitrisez';
-
-
-        const langtlvl = document.createElement('input');
-        langtlvl.type = "text";
-        langtlvl.name = "experience[]";
-        langtlvl.placeholder = 'Niveau de maîtrise: ( A1-A2-B1-B2-B3-C1-C2 )';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(langname);
-        div.appendChild(langtlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//langue 2
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerlang2");
-    const addButton = document.getElementById("addButtonlang2");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const langname = document.createElement('input');
-        langname.type = "text";
-        langname.name = "experience[]";
-        langname.placeholder = 'Entrez la langue vous maitrisez';
-
-
-        const langtlvl = document.createElement('input');
-        langtlvl.type = "text";
-        langtlvl.name = "experience[]";
-        langtlvl.placeholder = 'Niveau de maîtrise: ( A1-A2-B1-B2-B3-C1-C2 )';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(langname);
-        div.appendChild(langtlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-//langue 3
-document.addEventListener('DOMContentLoaded', function () {
-    const fieldContainer = document.getElementById("fieldContainerlang3");
-    const addButton = document.getElementById("addButtonlang3");
-
-    // Fonction pour ajouter un champ
-    function addField() {
-        const div = document.createElement('div');
-        div.classList.add('formation-groupe');//espace design
-
-        //creation des cases
-        const langname = document.createElement('input');
-        langname.type = "text";
-        langname.name = "experience[]";
-        langname.placeholder = 'Entrez la langue vous maitrisez';
-
-
-        const langtlvl = document.createElement('input');
-        langtlvl.type = "text";
-        langtlvl.name = "experience[]";
-        langtlvl.placeholder = 'Niveau de maîtrise: ( A1-A2-B1-B2-B3-C1-C2 )';
-
-
-
-        //creation bouton remove 
-        const removeButton = document.createElement('button');
-        removeButton.type = "button";
-        removeButton.textContent = 'Supprimer';
-
-        //  suppression
-        removeButton.addEventListener('click', function () {
-            fieldContainer.removeChild(div);
-        });
-
-        // On ajoute les éléments
-        div.appendChild(langname);
-        div.appendChild(langtlvl);
-        div.appendChild(removeButton);
-
-        // On ajoute le tout dans le container principal
-        fieldContainer.appendChild(div);
-    }
-
-    // On lie le bouton ajouter à la fonction
-    addButton.addEventListener('click', addField);
-});
-
-//Laision partie gauche avec al partie de droite 
-
-//centre interet
-//dupliquer + incrementation a l'id 
+
+//creation bouton remove
+//removeButton.type = "button";
+//removeButton.textContent = 'Supprimer';
+
+
+//Nvlle methode => carré 
+let compteur1 = 0
+document.getElementById('addFormbtn').addEventListener("click", function () {
+    const creaform = document.createElement("div");
+    compteur1++;
+    creaform.className = "creationformation";
+    creaform.id = "forma" + compteur1;
+    creaform.classList.add("formation-groupe")
+    // style trés moche 
+
+    const newtitle = document.createElement("h3");
+    newtitle.textContent = "Formation n°" + compteur1;
+
+    const nomforma = document.createElement("input")
+    nomforma.type = "text";
+    nomforma.id = "nomforma" + compteur1;
+    nomforma.placeholder = "Nom de la formation";
+
+
+    const lieuforma = document.createElement("input")
+    lieuforma.type = "text";
+    lieuforma.id = "lieuforma" + compteur1;
+    lieuforma.placeholder = "Lieu de la formation";
+
+
+    const periodforma = document.createElement("input")
+    periodforma.type = "text";
+    periodforma.id = "nomforma" + compteur1;
+    periodforma.placeholder = "periode de la formation";
+
+    //btn supprimer ? 
+    const btnsupprim = document.createElement("button");
+    btnsupprim.textContent = "Supprimer la formation"
+
+    btnsupprim.addEventListener("click", function () {
+        creaform.remove();
+    })
+
+    creaform.appendChild(newtitle);
+    creaform.appendChild(btnsupprim);
+    creaform.appendChild(nomforma);
+    creaform.appendChild(lieuforma);
+    creaform.appendChild(periodforma);
+
+    document.getElementById("forma1").appendChild(creaform);
+})
+
+// PARTIE EXP.PRO
+let compteur = 0
+document.getElementById('addprombtn').addEventListener("click", function () {
+    const creaform = document.createElement("div");
+    compteur++;
+    creaform.className = "creationxppro";
+    creaform.id = "XP" + compteur;
+    creaform.classList.add("formation-groupe")
+    // style trés moche (bouton)
+
+    const newtitle = document.createElement("h3");
+    newtitle.textContent = "Expérience pro n°" + compteur;
+
+    const nomforma = document.createElement("input")
+    nomforma.type = "text";
+    nomforma.id = "nomXP" + compteur;
+    nomforma.placeholder = "Nom de la mission";
+
+
+    const lieuforma = document.createElement("input")
+    lieuforma.type = "text";
+    lieuforma.id = "lieuxp" + compteur;
+    lieuforma.placeholder = "Lieu de la mission";
+
+
+    const periodforma = document.createElement("input")
+    periodforma.type = "text";
+    periodforma.id = "nomforma" + compteur;
+    periodforma.placeholder = "periode de la mission (Ex: Avril 2025 - Decembre 2025)";
+
+    //btn supprimer ? 
+    const btnsupprim = document.createElement("button");
+    btnsupprim.textContent = "Supprimer la mission"
+
+    btnsupprim.addEventListener("click", function () {
+        creaform.remove();
+    })
+
+    creaform.appendChild(newtitle);
+    creaform.appendChild(btnsupprim);
+    creaform.appendChild(nomforma);
+    creaform.appendChild(lieuforma);
+    creaform.appendChild(periodforma);
+
+    document.getElementById("exproo").appendChild(creaform);
+})
+// Compétences 
+
+let compteur2 = 0
+document.getElementById('addcomptbtn').addEventListener("click", function () {
+    const creaform = document.createElement("div");
+    compteur2++;
+    creaform.className = "creationxppro";
+    creaform.id = "XP" + compteur2;
+    creaform.classList.add("formation-groupe")
+    // style trés moche (bouton)
+
+    const newtitle = document.createElement("h3");
+    newtitle.textContent = "Expérience pro n°" + compteur2;
+
+    const nomforma = document.createElement("input")
+    nomforma.type = "text";
+    nomforma.id = "nomcompt" + compteur2;
+    nomforma.placeholder = "Nom de la compétence";
+
+
+    const descrmiss = document.createElement("input")
+    descrmiss.type = "text";
+    descrmiss.id = "descrmiss" + compteur2;
+    descrmiss.placeholder = "Décrivez votre compétence au maximum avec des exemples";
+
+    //btn supprimer ? 
+    const btnsupprim = document.createElement("button");
+    btnsupprim.textContent = "Supprimer la compétence"
+
+    btnsupprim.addEventListener("click", function () {
+        creaform.remove();
+    })
+
+    creaform.appendChild(newtitle);
+    creaform.appendChild(btnsupprim);
+    creaform.appendChild(nomforma);
+    creaform.appendChild(descrmiss);
+
+    document.getElementById("divcompt").appendChild(creaform);
+})
+//Langues 
+
+let compteur3 = 0
+document.getElementById('addlangbtn').addEventListener("click", function () {
+    const creaform = document.createElement("div");
+    compteur3++;
+    creaform.className = "creationlangue";
+    creaform.id = "lang" + compteur3;
+    creaform.classList.add("formation-groupe")
+    // style trés moche (bouton)
+
+    const newtitle = document.createElement("h3");
+    newtitle.textContent = "Langue n°" + compteur3;
+
+    const nomforma = document.createElement("input")
+    nomforma.type = "text";
+    nomforma.id = "nomcompt" + compteur2;
+    nomforma.placeholder = "Nom de la langue";
+
+
+    const descrmiss = document.createElement("input")
+    descrmiss.type = "text";
+    descrmiss.id = "descrmiss" + compteur2;
+    descrmiss.placeholder = "Décrivez votre niveau : ( A1-A2-B1-B2-B3-C1-C2 )";
+
+    //btn supprimer ? 
+    const btnsupprim = document.createElement("button");
+    btnsupprim.textContent = "Supprimer la langue"
+
+    btnsupprim.addEventListener("click", function () {
+        creaform.remove();
+    })
+
+    creaform.appendChild(newtitle);
+    creaform.appendChild(btnsupprim);
+    creaform.appendChild(nomforma);
+    creaform.appendChild(descrmiss);
+
+    document.getElementById("divcompt").appendChild(creaform);
+})
+
+//Link avec le preview 
+
+//marche pas car chaque titre de chaque categotir se remplace
+const nomformation = document.getElementById("forma1");
+nomformation.addEventListener("input", (event)=>{
+const nomfofo = event.target.value;
+N_F1.innerText = nomfofo;
+})
+
+//LIER GAUCHE 0 DROITE 
+//ON retire les trucs en preview et on ajoute les choses en meme temps 

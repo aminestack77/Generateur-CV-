@@ -15,6 +15,15 @@
     <style>
         body {
             background-color: #f8f9fa;
+            height: 100%;
+        }
+
+        .container-fluid {
+            height: 100vh;
+        }
+
+        .row {
+            height: 100%;
         }
 
         .formation-groupe {
@@ -84,124 +93,68 @@
                 </div>
 
                 <!-- Formations -->
-                 <div class="formations mb-4">
+                <div class="formations mb-4">
                     <h2 class="text-center text-decoration-underline">Formations</h2>
                     <div class="formation1 mb-3">
-                        <h3 class="text-center">Formation n°1:</h3>
-                        <form action="" method="get">
-                            <div class="mb-2">
-                                <input type="text" class="form-control" placeholder="Nom de la formation">
-                            </div>
-                            <div class="mb-2">
-                                <input type="text" class="form-control" placeholder="Établissement">
-                            </div>
-                            <div class="mb-2">
-                                <input type="text" class="form-control" placeholder="Période">
-                            </div>
-                        </form>
-                        <form id="fieldContainerformation2" action="" method="get">
-                            <h3 class="text-center">Formation n°2:</h3>
-                            <button type="button" id="addButton2" class="btn btn-light mb-3">Ajouter une
-                                expérience</button>
-                        </form>
-                        <form id="fieldContainerformation3" action="" method="get">
-                            <h3 class="text-center">Formation n°3:</h3>
-                            <button type="button" id="addButton3" class="btn btn-light mb-3">Ajouter une
-                                expérience</button>
-                        </form>
-
+                        <div id="forma1">
+                            <form action="" method="get">
+                                <button id="addFormbtn" type="button">Ajouter une formation</button>
+                                <div id="divform">
+                                </div>
+                            </form>
+                        </div>
                     </div>
-
                 </div>
 
                 <!-- Expériences professionnelles -->
-                <div class="exp mb-4">
-                    <h2 class="text-center text-decoration-underline">Expériences professionnelles</h2>
-                    <form id="fieldContainerXp1" action="" method="get">
-                        <h3 class="text-center">Expérience professionnelles n°1 :</h3>
-                        <button type="button" id="addButtonxp1" class="btn btn-light mb-3">Ajouter une
-                            expérience</button>
-                    </form>
-                    <form id="fieldContainerXp2" action="" method="get">
-                        <h3 class="text-center">Expérience professionnelles n°2 :</h3>
-                        <button type="button" id="addButtonxp2" class="btn btn-light mb-3">Ajouter une
-                            expérience</button>
-                    </form>
-                    <form id="fieldContainerXp3" action="" method="get">
-                        <h3 class="text-center">Expérience professionnelles n°3:</h3>
-                        <button type="button" id="addButtonxp3" class="btn btn-light mb-3">Ajouter une
-                            expérience</button>
-                    </form>
-
+                <div class="exppro mb-4">
+                    <h2 class="text-center text-decoration-underline">Experiences professionnelles</h2>
+                    <div class="expp mb-3">
+                        <div id="exproo">
+                            <form action="" method="get">
+                                <button id="addprombtn" type="button">Ajouter une Expérience professionnelle</button>
+                                <div id="divXPform">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Compétences -->
-                <div class="competences mb-4">
+                <div class="Compt mb-4">
                     <h2 class="text-center text-decoration-underline">Compétences</h2>
-
-                    <div class="mb-3">
-                        <h3 class="text-center">Compétence n°1</h3>
-                        <div id="fieldContainerComp">
-                            <button type="button" id="addButtoncomp" class="btn btn-light mb-3">Ajouter une compétence
-                            </button>
+                    <div class="compt mb-3">
+                        <div id="Compet">
+                            <form action="" method="get">
+                                <button id="addcomptbtn" type="button">Ajouter une compétence</button>
+                                <div id="divcompt">
+                                </div>
+                            </form>
                         </div>
-
-                    </div>
-
-                    <div class="mb-3">
-                        <h3 class="text-center">Compétence n°2</h3>
-                        <div id="fieldContainerComp2">
-                            <button type="button" id="addButtoncomp2" class="btn btn-light mb-3">Ajouter une compétence
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div class="mb-3">
-                        <h3 class="text-center">Compétence n°3</h3>
-                        <form id="fieldContainerComp3" action="" method="get">
-                            <button type="button" id="addButtoncomp3" class="btn btn-light mb-3">Ajouter une
-                                expérience</button>
-                        </form>
-
-                    </div>
-                    <div class="mb-4">
-                        <h2 class="text-center text-decoration-underline">Langues</h2>
-                        <div class="mb-3">
-                            <h3 class="text-center">Langue n°1</h3>
-                            <div id="fieldContainerlang1">
-                                <button type="button" id="addButtonlang1" class="btn btn-light mb-3">Ajouter une
-                                    Langue
-                                </button>
-                            </div>
-
-                        </div>
-                        <div class="mb-3">
-                            <h3 class="text-center">Langue n°2</h3>
-                            <div id="fieldContainerlang2">
-                                <button type="button" id="addButtonlang2" class="btn btn-light mb-3">Ajouter une
-                                    Langue
-                                </button>
-                            </div>
-
-                        </div>
-                        <div class="mb-3">
-                            <h3 class="text-center">Langue n°3</h3>
-                            <div id="fieldContainerlang3">
-                                <button type="button" id="addButtonlang3" class="btn btn-light mb-3">Ajouter une
-                                    Langue
-                                </button>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="text-center">
-                        <button class="btn btn-success" type="button">Téléchargement du CV en PDF</button>
                     </div>
                 </div>
+
+                <div class="mb-4">
+                    <h2 class="text-center text-decoration-underline">Langues</h2>
+                    <div class="compt mb-3">
+                        <div id="langue">
+                            <form action="" method="get">
+                                <button id="addlangbtn" type="button">Ajouter une langue maîtrisé</button>
+                                <div id="divlang">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" type="button">Téléchargement du CV en PDF</button>
+                </div>
             </div>
+
 
             <!-- PARTIE DROITE : GÉNÉRATEUR DE CV -->
             <div class="col-md-6 cv-section">
@@ -229,13 +182,15 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <p id="N_F1"><strong>Formation 1</strong></p>
-                                <p>Établissement - Période</p>
+                                <p>Établissement</p>
+                                <p>Période</p>
                             </div>
                         </div>
                         <div class="row mb-2">
                             <div class="col">
                                 <p><strong>Formation 2</strong></p>
-                                <p>Établissement - Période</p>
+                                <p>Établissement</p>
+                                <p>Période</p>
                             </div>
                         </div>
                     </div>
