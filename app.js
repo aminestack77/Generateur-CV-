@@ -54,8 +54,15 @@ document.getElementById('addFormbtn').addEventListener("click", function () {
     compteur1++;
     creaform.className = "creationformation";
     creaform.id = "forma" + compteur1;
-    creaform.classList.add("formation-groupe")
-    // style trés moche 
+    creaform.classList.add("formation-groupe")// style trés moche 
+    //creation de la partie de droite (preview) avc les variables 
+    const preview = document.createElement("div");
+    const perprev = document.createElement("p");
+    const titrepre = document.createElement("p");
+    const descpre = document.createElement("p");
+    const annepre = document.createElement("p");
+    const lieupre = document.createElement("p");
+
 
     const newtitle = document.createElement("h3");
     newtitle.textContent = "Formation n°" + compteur1;
@@ -64,18 +71,29 @@ document.getElementById('addFormbtn').addEventListener("click", function () {
     nomforma.type = "text";
     nomforma.id = "nomforma" + compteur1;
     nomforma.placeholder = "Nom de la formation";
+    // evenement 
+    nomforma.addEventListener("input", () => {
+        titrepre.textContent = nomforma.value;
+    })
 
 
     const lieuforma = document.createElement("input")
     lieuforma.type = "text";
     lieuforma.id = "lieuforma" + compteur1;
     lieuforma.placeholder = "Lieu de la formation";
-
+    //wai c sa mais pas la 
+    lieuforma.addEventListener("input", () => {
+        lieupre.textContent = lieuforma.value;
+        //creerr nv constant qui se met a droit?
+    })
 
     const periodforma = document.createElement("input")
     periodforma.type = "text";
     periodforma.id = "nomforma" + compteur1;
     periodforma.placeholder = "periode de la formation";
+    periodforma.addEventListener("input", () => {
+        perprev.textContent = periodforma.value
+    })
 
     //btn supprimer ? 
     const btnsupprim = document.createElement("button");
@@ -90,8 +108,17 @@ document.getElementById('addFormbtn').addEventListener("click", function () {
     creaform.appendChild(nomforma);
     creaform.appendChild(lieuforma);
     creaform.appendChild(periodforma);
+    document.getElementById("cocodr").appendChild(preview);
+    preview.appendChild(titrepre);
+    preview.appendChild(descpre);
+    preview.appendChild(annepre);
+    preview.appendChild(lieupre);
+    preview.appendChild(perprev);
 
     document.getElementById("forma1").appendChild(creaform);
+    //Construction de la partie de droite 
+
+
 })
 
 // PARTIE EXP.PRO
@@ -196,13 +223,13 @@ document.getElementById('addlangbtn').addEventListener("click", function () {
 
     const nomforma = document.createElement("input")
     nomforma.type = "text";
-    nomforma.id = "nomcompt" + compteur2;
+    nomforma.id = "nomcompt" + compteur3;
     nomforma.placeholder = "Nom de la langue";
 
 
     const descrmiss = document.createElement("input")
     descrmiss.type = "text";
-    descrmiss.id = "descrmiss" + compteur2;
+    descrmiss.id = "descrmiss" + compteur3;
     descrmiss.placeholder = "Décrivez votre niveau : ( A1-A2-B1-B2-B3-C1-C2 )";
 
     //btn supprimer ? 
@@ -221,14 +248,15 @@ document.getElementById('addlangbtn').addEventListener("click", function () {
     document.getElementById("divcompt").appendChild(creaform);
 })
 
-//Link avec le preview 
+//Link avec le preview
 
 //marche pas car chaque titre de chaque categotir se remplace
-const nomformation = document.getElementById("forma1");
-nomformation.addEventListener("input", (event)=>{
-const nomfofo = event.target.value;
-N_F1.innerText = nomfofo;
-})
+//const nomformation = document.getElementById("forma1");
+//nmformation.addEventListener("input", (event)=>{
+//const nomfofo = event.target.value;
+//N_F1.innerText = nomfofo;
+//})
 
-//LIER GAUCHE 0 DROITE 
+//LIER GAUCHE 0 DROITE
 //ON retire les trucs en preview et on ajoute les choses en meme temps 
+

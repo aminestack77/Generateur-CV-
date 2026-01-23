@@ -179,19 +179,14 @@
 
                     <div class="education mb-4">
                         <h2 class="text-center fs-2 text-uppercase text-decoration-underline">Diplômes/Formations</h2>
-                        <div class="row mb-2">
+                        <div id="cocodr" class="row mb-2">
                             <div class="col">
-                                <p id="N_F1"><strong>Formation 1</strong></p>
-                                <p>Établissement</p>
-                                <p>Période</p>
+                            
                             </div>
                         </div>
                         <div class="row mb-2">
                             <div class="col">
-                                <p><strong>Formation 2</strong></p>
-                                <p>Établissement</p>
-                                <p>Période</p>
-                            </div>
+                          
                         </div>
                     </div>
 
